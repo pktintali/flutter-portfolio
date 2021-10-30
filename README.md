@@ -1,5 +1,5 @@
 # portfolio_app
-A very responsive and beautiful developed portfolio developed using flutter.
+A very responsive and beautiful developer portfolio developed using flutter.
 
 ## Getting Started
 
