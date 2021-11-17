@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_app/utils.dart';
 
 class MoreAboutMe extends StatelessWidget {
@@ -11,13 +13,13 @@ class MoreAboutMe extends StatelessWidget {
           EdgeInsets.symmetric(horizontal: Utils.isMobile(context) ? 40 : 80),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
+        children: [
           Padding(
-            padding: EdgeInsets.only(bottom: 15),
+            padding: const EdgeInsets.only(bottom: 15),
             child: Center(
               child: Text(
-                'More About Me',
-                style: TextStyle(
+                'more_about_me'.tr,
+                style: GoogleFonts.laila(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
@@ -25,25 +27,25 @@ class MoreAboutMe extends StatelessWidget {
             ),
           ),
           Text(
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus',
-            style: TextStyle(
+            'more_about_me_text1'.tr,
+            style: const TextStyle(
               fontSize: 16,
             ),
             textAlign: TextAlign.justify,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(vertical: 15),
+            padding: const EdgeInsets.symmetric(vertical: 15),
             child: Text(
-              'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nostrum dolor minus, libero delectus praesentium perferendis',
-              style: TextStyle(
+              'more_about_me_text2'.tr,
+              style: const TextStyle(
                 fontSize: 16,
               ),
               textAlign: TextAlign.justify,
             ),
           ),
           Text(
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequuntur labore? Ea totam voluptas amet!',
-            style: TextStyle(
+            'more_about_me_text3'.tr,
+            style: const TextStyle(
               fontSize: 16,
             ),
             textAlign: TextAlign.justify,

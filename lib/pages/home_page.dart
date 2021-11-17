@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_app/components/contact_form.dart';
 import 'package:portfolio_app/components/footer.dart';
 import 'package:portfolio_app/components/header1.dart';
@@ -20,13 +22,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: const Text(
-          'JANE DOE',
-          style: TextStyle(
-            fontSize: 22,
-            color: Color(0xFF4756DF),
-            fontWeight: FontWeight.bold,
-          ),
+        title: Text(
+          'name'.tr,
+          style: GoogleFonts.laila( fontSize: 25,
+            color: const Color(0xFF4756DF),
+            fontWeight: FontWeight.bold,),
         ),
         backgroundColor: Colors.white,
         toolbarHeight: 66,

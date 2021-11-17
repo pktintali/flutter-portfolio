@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 import 'package:portfolio_app/utils.dart';
 
 class HomePageActions extends StatelessWidget {
@@ -33,9 +34,9 @@ class HomePageActions extends StatelessWidget {
               curve: Curves.easeIn,
             );
           },
-          child: const Text(
-            'About',
-            style: TextStyle(
+          child: Text(
+            'menu_about'.tr,
+            style: const TextStyle(
               fontSize: 17,
               color: Color(0xFf4756DF),
               fontWeight: FontWeight.w600,
@@ -55,9 +56,9 @@ class HomePageActions extends StatelessWidget {
               curve: Curves.easeIn,
             );
           },
-          child: const Text(
-            'Skills',
-            style: TextStyle(
+          child: Text(
+            'menu_skills'.tr,
+            style: const TextStyle(
               fontSize: 17,
               color: Color(0xFf4756DF),
               fontWeight: FontWeight.w600,
@@ -77,9 +78,9 @@ class HomePageActions extends StatelessWidget {
               curve: Curves.easeIn,
             );
           },
-          child: const Text(
-            'Projects',
-            style: TextStyle(
+          child: Text(
+            'menu_projects'.tr,
+            style:const TextStyle(
               fontSize: 17,
               color: Color(0xFf4756DF),
               fontWeight: FontWeight.w600,
@@ -99,9 +100,9 @@ class HomePageActions extends StatelessWidget {
               curve: Curves.easeIn,
             );
           },
-          child: const Text(
-            'Contact',
-            style: TextStyle(
+          child: Text(
+            'menu_contact'.tr,
+            style: const TextStyle(
               fontSize: 17,
               color: Color(0xFf4756DF),
               fontWeight: FontWeight.w600,

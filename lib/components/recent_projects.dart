@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_app/constants.dart';
 import 'package:portfolio_app/components/project_card.dart';
 
@@ -9,9 +11,9 @@ class RecentProjects extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Text(
-          'Some of my Recent Projects',
-          style: TextStyle(
+        Text(
+          'recent_projects'.tr,
+          style: GoogleFonts.laila(
             fontSize: 24,
             fontWeight: FontWeight.bold,
           ),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_app/components/skill_card.dart';
 import 'package:portfolio_app/utils.dart';
 
@@ -9,9 +11,9 @@ class TopSkills extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Text(
-          'My Top Skills',
-          style: TextStyle(
+        Text(
+          'top_skills'.tr,
+          style: GoogleFonts.laila(
             fontSize: 24,
             fontWeight: FontWeight.bold,
           ),
@@ -19,7 +21,7 @@ class TopSkills extends StatelessWidget {
         const SizedBox(height: 15),
         Padding(
           padding: EdgeInsets.symmetric(
-            horizontal:Utils.isMobile(context)? 10:Utils.mdqw(context) / 4,
+            horizontal: Utils.isMobile(context) ? 10 : Utils.mdqw(context) / 4,
           ),
           child: Wrap(
             children: const [
@@ -37,7 +39,8 @@ class TopSkills extends StatelessWidget {
               SkillCard(
                   url: 'https://cdn-icons-png.flaticon.com/512/226/226777.png'),
               SkillCard(
-                  url: 'https://cdn.iconscout.com/icon/free/png-256/python-3521655-2945099.png'),
+                  url:
+                      'https://cdn.iconscout.com/icon/free/png-256/python-3521655-2945099.png'),
               SkillCard(
                   url:
                       'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1024px-Git_icon.svg.png'),
