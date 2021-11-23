@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/get_utils/src/extensions/internacionalization.dart';
 import 'package:portfolio_app/utils.dart';
 
@@ -80,7 +81,7 @@ class HomePageActions extends StatelessWidget {
           },
           child: Text(
             'menu_projects'.tr,
-            style:const TextStyle(
+            style: const TextStyle(
               fontSize: 17,
               color: Color(0xFf4756DF),
               fontWeight: FontWeight.w600,
@@ -109,7 +110,7 @@ class HomePageActions extends StatelessWidget {
             ),
           ),
         ),
-      )
+      ),
     ];
   }
 }
