@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_app/models/project_model.dart';
 import 'package:portfolio_app/utils.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCard extends StatelessWidget {
   final ProjectModel project;
@@ -36,8 +39,8 @@ class ProjectCard extends StatelessWidget {
                 child: Image.network(project.imgURL),
               ),
               Text(
-                project.projectName,
-                style: const TextStyle(
+                project.projectName.tr,
+                style: GoogleFonts.laila(
                   fontSize: 21,
                   fontWeight: FontWeight.bold,
                 ),
@@ -46,19 +49,25 @@ class ProjectCard extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: Text(
-                  project.shortDescription??'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ratione vel inventore labore commodi modi quos culpa aut saepe! Alias!',
+                  project.shortDescription!.tr,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(fontSize: 16),
+                  style: GoogleFonts.cairo(),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 15, bottom: 6),
                 child: TextButton(
-                  child: const Text(
-                    'Check it Out',
-                    style: TextStyle(fontSize: 17),
+                  child: Text(
+                    'project_action'.tr,
+                    style: const TextStyle(fontSize: 17),
                   ),
-                  onPressed: () {},
+                  onPressed: () async {
+                    if (project.actionLink != '#') {
+                      await canLaunch(project.actionLink)
+                          ? await launch(project.actionLink)
+                          : throw 'Could not launch ${project.actionLink}';
+                    }
+                  },
                 ),
               ),
             ],

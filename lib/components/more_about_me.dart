@@ -28,26 +28,20 @@ class MoreAboutMe extends StatelessWidget {
           ),
           Text(
             'more_about_me_text1'.tr,
-            style: const TextStyle(
-              fontSize: 16,
-            ),
+            style: GoogleFonts.cairo(),
             textAlign: TextAlign.justify,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 15),
             child: Text(
               'more_about_me_text2'.tr,
-              style: const TextStyle(
-                fontSize: 16,
-              ),
+              style: GoogleFonts.cairo(),
               textAlign: TextAlign.justify,
             ),
           ),
           Text(
             'more_about_me_text3'.tr,
-            style: const TextStyle(
-              fontSize: 16,
-            ),
+            style: GoogleFonts.cairo(),
             textAlign: TextAlign.justify,
           )
         ],

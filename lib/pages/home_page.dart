@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:get/get_utils/src/extensions/internacionalization.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_app/components/contact_form.dart';
@@ -10,6 +11,8 @@ import 'package:portfolio_app/components/my_drawer.dart';
 import 'package:portfolio_app/components/recent_projects.dart';
 import 'package:portfolio_app/components/social_icons_bar.dart';
 import 'package:portfolio_app/components/top_skills.dart';
+import 'package:portfolio_app/components/translate_button.dart';
+import 'package:portfolio_app/controllers/language_chip_controller.dart';
 import 'package:portfolio_app/utils.dart';
 
 class HomePage extends StatelessWidget {
@@ -19,19 +22,24 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(LanguageChipController());
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
         title: Text(
           'name'.tr,
-          style: GoogleFonts.laila( fontSize: 25,
+          style: GoogleFonts.laila(
+            fontSize: 25,
             color: const Color(0xFF4756DF),
-            fontWeight: FontWeight.bold,),
+            fontWeight: FontWeight.bold,
+          ),
         ),
         backgroundColor: Colors.white,
         toolbarHeight: 66,
         elevation: 2,
         actions: [
+          TranslateButton(),
+          const SizedBox(width: 5),
           Utils.isMobile(context)
               ? Padding(
                   padding: const EdgeInsets.only(right: 10),

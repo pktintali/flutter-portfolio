@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_app/utils.dart';
 
 class ContactForm extends StatelessWidget {
@@ -8,9 +10,9 @@ class ContactForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Text(
-          'Get In Touch With Me',
-          style: TextStyle(
+        Text(
+          'get_in_touch'.tr,
+          style: GoogleFonts.laila(
             fontSize: 24,
             fontWeight: FontWeight.bold,
           ),
@@ -37,69 +39,71 @@ class ContactForm extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'Name',
-                    style: TextStyle(
+                  Text(
+                    'contact_name'.tr,
+                    style: const TextStyle(
                       color: Color(0xFF4756DF),
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 8),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
                     child: TextField(
                       decoration: InputDecoration(
-                          hintText: 'Enter Your Name',
-                          border: OutlineInputBorder(
+                          hintText: 'name_hint'.tr,
+                          border: const OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0xFF4756DF),
                             ),
                           ),
-                          contentPadding: EdgeInsets.symmetric(horizontal: 10)),
+                          contentPadding:
+                              const EdgeInsets.symmetric(horizontal: 10)),
                     ),
                   ),
-                  const Text(
-                    'Email',
-                    style: TextStyle(
+                  Text(
+                    'email'.tr,
+                    style: const TextStyle(
                       color: Color(0xFF4756DF),
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 8),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
                     child: TextField(
                       decoration: InputDecoration(
-                          hintText: 'Enter Your Email',
-                          border: OutlineInputBorder(
+                          hintText: 'email_hint'.tr,
+                          border: const OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0xFF4756DF),
                             ),
                           ),
-                          contentPadding: EdgeInsets.symmetric(horizontal: 10)),
+                          contentPadding:
+                              const EdgeInsets.symmetric(horizontal: 10)),
                     ),
                   ),
-                  const Text(
-                    'Message',
-                    style: TextStyle(
+                  Text(
+                    'message'.tr,
+                    style: const TextStyle(
                       color: Color(0xFF4756DF),
                       fontSize: 18,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 8),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
                     child: TextField(
                       minLines: 10,
                       maxLines: 15,
                       decoration: InputDecoration(
-                          hintText: 'Enter Your Message',
-                          border: OutlineInputBorder(
+                          hintText: 'message_hint'.tr,
+                          border: const OutlineInputBorder(
                             borderSide: BorderSide(
                               color: Color(0xFF4756DF),
                             ),
                           ),
-                          contentPadding: EdgeInsets.all(10.0)),
+                          contentPadding: const EdgeInsets.all(10.0)),
                     ),
                   ),
                   Row(
@@ -107,11 +111,11 @@ class ContactForm extends StatelessWidget {
                       Expanded(
                         child: OutlinedButton(
                           onPressed: () {},
-                          child: const Padding(
-                            padding: EdgeInsets.all(8.0),
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
                             child: Text(
-                              'Submit',
-                              style: TextStyle(
+                              'submit'.tr,
+                              style: const TextStyle(
                                 color: Colors.black,
                                 fontSize: 16,
                               ),

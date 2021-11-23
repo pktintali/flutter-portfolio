@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 class Footer extends StatelessWidget {
   const Footer({Key? key}) : super(key: key);
@@ -7,14 +8,14 @@ class Footer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Text('© Copyright 2021'),
+        Text('copyright'.tr),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Built with ❤ by'),
+            Text('built_with'.tr),
             TextButton(
               onPressed: () {},
-              child: const Text('Pradeep Tintali'),
+              child: Text('built_with_name'.tr),
             ),
           ],
         )

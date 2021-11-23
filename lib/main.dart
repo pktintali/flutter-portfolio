@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      title: 'Pradeep Kumar',
       debugShowCheckedModeBanner: false,
       translations: Messages(),
       locale: Get.deviceLocale,
