@@ -1,4 +1,4 @@
-# portfolio_app
+# Pradeep Kumar's Portfolio App
 A very responsive and beautiful developer portfolio developed using flutter.
 
 ## Getting Started
