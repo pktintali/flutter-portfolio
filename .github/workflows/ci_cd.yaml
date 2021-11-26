@@ -4,9 +4,9 @@ on:
   push:
     tags:
     - '*'
-    branches: [ main ]
+    branches: [ pradeep ]
   pull_request:
-    branches: [ main ]
+    branches: [ pradeep ]
 
 jobs:
   flutter_test:
