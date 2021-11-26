@@ -31,7 +31,7 @@ class TopSkills extends StatelessWidget {
               ),
               SkillCard(
                 url:
-                    'https://user-images.githubusercontent.com/26507463/53453892-49908900-3a04-11e9-9dce-77ed3d694326.png',
+                    'https://raw.githubusercontent.com/pktintali/flutter-portfolio/pradeep/media/dart.png',
               ),
               SkillCard(
                   url:
@@ -43,7 +43,7 @@ class TopSkills extends StatelessWidget {
                       'https://cdn.iconscout.com/icon/free/png-256/python-3521655-2945099.png'),
               SkillCard(
                   url:
-                      'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1024px-Git_icon.svg.png'),
+                      'https://raw.githubusercontent.com/pktintali/flutter-portfolio/pradeep/media/git.png'),
             ],
           ),
         ),

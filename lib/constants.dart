@@ -12,14 +12,14 @@ class Constants {
     ProjectModel(
       actionLink: '#',
       imgURL:
-          'https://raw.githubusercontent.com/pktintali/flutter-portfolio/pradeep/assets/images/shop_guide.jpg',
+          'https://raw.githubusercontent.com/pktintali/flutter-portfolio/pradeep/media/shop_guide.jpg',
       projectName: 'project2_title',
       shortDescription: 'project2_description',
     ),
     ProjectModel(
       actionLink: 'https://pksorting.web.app/',
       imgURL:
-          'https://raw.githubusercontent.com/pktintali/flutter-portfolio/pradeep/assets/images/sorting_visualizer.png',
+          'https://raw.githubusercontent.com/pktintali/flutter-portfolio/pradeep/media/sorting_visualizer.png',
       projectName: 'project3_title',
       shortDescription: 'project3_description',
     ),

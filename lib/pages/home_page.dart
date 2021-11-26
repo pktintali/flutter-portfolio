@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final controller = Get.put(LanguageChipController());
+    Get.put(LanguageChipController());
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
           style: GoogleFonts.laila(
             fontSize: 25,
             color: const Color(0xFF4756DF),
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w600,
           ),
         ),
         backgroundColor: Colors.white,
@@ -74,7 +74,7 @@ class HomePage extends StatelessWidget {
           );
         },
         child: Image.network(
-          'https://eager-williams-af0d00.netlify.app/assets/icons/icons8-upward-arrow.gif',
+          'https://raw.githubusercontent.com/pktintali/flutter-portfolio/pradeep/media/icons/top.gif',
         ),
       ),
       body: SafeArea(

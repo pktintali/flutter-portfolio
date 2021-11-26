@@ -8,7 +8,7 @@ class EnUs {
     'menu_contact': 'Contact',
     'about_me': 'About Me',
     'about_me_text':
-        'Full Stack Flutter Deeloper. Flutter and Python enthusiast. Skilled in Flutter, Firebase, Java, Python, Django, MySQL and Git. Developing Software Profucts for Life. Active learner and creative mind. Software Development is passion.',
+        'Full Stack Flutter Developer. Flutter and Python enthusiast. Skilled in Flutter, Firebase, Java, Python, Django, MySQL and Git. Developing Software Profucts for Life. Active learner and creative mind. Software Development is passion.',
     'more_about_me': 'More About Me',
     'more_about_me_text1':
         'I am also known as Pradeep Tintali in the online world. Just google pradeep tintali and you will get all my social media and othere platform where I am. Currently I am  4th year computer scince student in GL Bajaj Institute of Technology and Management. I value problem solving.',

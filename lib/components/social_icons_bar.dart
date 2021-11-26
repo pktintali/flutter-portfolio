@@ -17,22 +17,22 @@ class SocialIconsBar extends StatelessWidget {
           children: const [
             SocialIcon(
               imgURL:
-                  'https://eager-williams-af0d00.netlify.app/assets/icons/icons8-twitter-circled.gif',
+                  'https://raw.githubusercontent.com/pktintali/flutter-portfolio/pradeep/media/icons/twitter.png',
               actionLink: 'https://twitter.com/pradeep_tintali',
             ),
             SocialIcon(
               imgURL:
-                  'https://eager-williams-af0d00.netlify.app/assets/icons/icons8-instagram.gif',
+                  'https://raw.githubusercontent.com/pktintali/flutter-portfolio/pradeep/media/icons/instagram.png',
               actionLink: 'https://www.instagram.com/pradeeptintali/',
             ),
             SocialIcon(
               imgURL:
-                  'https://eager-williams-af0d00.netlify.app/assets/icons/icons8-linkedin-circled.gif',
+                  'https://raw.githubusercontent.com/pktintali/flutter-portfolio/pradeep/media/icons/linkedin.gif',
               actionLink: 'https://www.linkedin.com/in/pradeeptintali/',
             ),
             SocialIcon(
               imgURL:
-                  'https://eager-williams-af0d00.netlify.app/assets/icons/icons8-github.gif',
+                  'https://raw.githubusercontent.com/pktintali/flutter-portfolio/pradeep/media/icons/github.gif',
               actionLink: 'https://github.com/pktintali',
             ),
           ],
